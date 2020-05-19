@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     
     'user_management',
     'playlist',
+    'follow',
 ]
 
 MIDDLEWARE = [
