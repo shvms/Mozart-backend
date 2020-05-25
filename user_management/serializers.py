@@ -57,9 +57,14 @@ class UserShortSerializer(serializers.HyperlinkedModelSerializer):
   
   url = serializers.HyperlinkedIdentityField(
     view_name='user-detail',
-    lookup_field='username'
+    lookup_field='username',
+    read_only=True
   )
   
   class Meta:
     model = UserModel
-    fields = ['username', 'url']
+    fields = ['id', 'username', 'url']
+    extra_kwargs = {
+      'id': {'read_only': True},
+      'username': {'read_only': True},
+    }
