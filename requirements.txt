@@ -1,5 +1,5 @@
 asgiref==3.2.7
-Django==2.2.10
+Django==2.2.20
 django-activity-stream==0.8.0
 djangorestframework==3.11.0
 djangorestframework-simplejwt==4.4.0
